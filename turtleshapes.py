@@ -4,6 +4,7 @@ admiral = turtle.Turtle()
 admiral.speed(10)
 
 
+# Setting the Position of the Pen
 def set_position(pos_x, pos_y):
     admiral.setx(pos_x)
     admiral.sety(pos_y)
@@ -166,6 +167,7 @@ def triangle_section():
     admiral.end_fill()
 
 
+# Rectangle Section
 def rectangle_section():
     admiral.fillcolor("#F77F00")
 
