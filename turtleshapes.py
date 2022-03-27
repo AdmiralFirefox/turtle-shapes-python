@@ -21,6 +21,16 @@ def draw_triangle(size):
         admiral.left(120)
 
 
+def draw_rectangle(size):
+    for i in range(4):
+        if i % 2 == 0:
+            admiral.forward(size)
+            admiral.right(90)
+        else:
+            admiral.forward(size / 2)
+            admiral.right(90)
+
+
 # Square Section
 def square_section():
     admiral.fillcolor("#003049")
@@ -156,6 +166,50 @@ def triangle_section():
     admiral.end_fill()
 
 
+def rectangle_section():
+    admiral.fillcolor("#F77F00")
+
+    admiral.penup()
+    set_position(130, -150)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_rectangle(150)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(220, -80)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_rectangle(70)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(90, -80)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_rectangle(90)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(50, -160)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_rectangle(40)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(40, -210)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_rectangle(60)
+    admiral.end_fill()
+
+
 # Drawing the Square Section
 square_section()
 
@@ -164,5 +218,8 @@ circle_section()
 
 # Drawing the Triangle Section
 triangle_section()
+
+# Drawing the Rectangle Section
+rectangle_section()
 
 turtle.done()
