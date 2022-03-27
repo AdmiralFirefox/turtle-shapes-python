@@ -113,11 +113,47 @@ def circle_section():
 
 # Triangle Section
 def triangle_section():
+    admiral.fillcolor("#D62828")
+
     admiral.penup()
-    set_position(-290, -250)
+    set_position(-300, -220)
     admiral.pendown()
 
+    admiral.begin_fill()
     draw_triangle(120)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(-295, -90)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_triangle(50)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(-190, -130)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_triangle(70)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(-130, -190)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_triangle(30)
+    admiral.end_fill()
+
+    admiral.penup()
+    set_position(-160, -250)
+    admiral.pendown()
+
+    admiral.begin_fill()
+    draw_triangle(40)
+    admiral.end_fill()
 
 
 # Drawing the Square Section
@@ -127,6 +163,6 @@ square_section()
 circle_section()
 
 # Drawing the Triangle Section
-# triangle_section()
+triangle_section()
 
 turtle.done()
