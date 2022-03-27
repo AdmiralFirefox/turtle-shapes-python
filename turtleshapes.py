@@ -10,6 +10,18 @@ def set_position(pos_x, pos_y):
     admiral.sety(pos_y)
 
 
+def display_text():
+    style = ("Roboto", 20, "bold")
+    admiral.write("Turtle Shapes!", font=style, align="center")
+
+    admiral.penup()
+    set_position(0, -25)
+    admiral.pendown()
+
+    style = ("Roboto", 15, "bold")
+    admiral.write("by: James Joseph Cuadra", font=style, align="center")
+
+
 def draw_square(size):
     for i in range(4):
         admiral.forward(size)
@@ -32,7 +44,6 @@ def draw_rectangle(size):
             admiral.right(90)
 
 
-# Square Section
 def square_section():
     admiral.fillcolor("#003049")
 
@@ -77,7 +88,6 @@ def square_section():
     admiral.end_fill()
 
 
-# Circle Section
 def circle_section():
     admiral.fillcolor("#06D6A0")
 
@@ -122,7 +132,6 @@ def circle_section():
     admiral.end_fill()
 
 
-# Triangle Section
 def triangle_section():
     admiral.fillcolor("#D62828")
 
@@ -167,7 +176,6 @@ def triangle_section():
     admiral.end_fill()
 
 
-# Rectangle Section
 def rectangle_section():
     admiral.fillcolor("#F77F00")
 
@@ -211,6 +219,9 @@ def rectangle_section():
     draw_rectangle(60)
     admiral.end_fill()
 
+
+# Display Text
+display_text()
 
 # Drawing the Square Section
 square_section()
