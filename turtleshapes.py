@@ -1,7 +1,7 @@
 import turtle
 
 admiral = turtle.Turtle()
-admiral.speed(10)
+admiral.speed(5)
 
 
 # Setting the Position of the Pen
@@ -11,6 +11,8 @@ def set_position(pos_x, pos_y):
 
 
 def display_text():
+    admiral.color("#293241")
+
     style = ("Roboto", 20, "bold")
     admiral.write("Turtle Shapes!", font=style, align="center")
 
